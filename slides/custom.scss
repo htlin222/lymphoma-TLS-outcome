@@ -1,0 +1,57 @@
+/*-- scss:defaults --*/
+$body-bg: #ffffff;
+$body-color: #1a1a1a;
+$link-color: #1f4e79;
+$presentation-heading-color: #1f4e79;
+$presentation-heading-font: "Helvetica Neue", "Arial", sans-serif;
+$presentation-font-size-root: 30px;
+
+/*-- scss:rules --*/
+.reveal h1 {
+  font-size: 1.7em;
+}
+
+.reveal h2 {
+  font-size: 1.3em;
+  border-bottom: 2px solid #1f4e79;
+  padding-bottom: 0.2em;
+}
+
+.reveal table {
+  font-size: 0.65em;
+}
+
+.reveal .slide-number {
+  font-size: 0.6em;
+}
+
+.reveal .footer {
+  font-size: 0.5em;
+  opacity: 0.7;
+}
+
+.takehome {
+  background: #f5f9ff;
+  border-left: 4px solid #1f4e79;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+}
+
+.callout-warning {
+  background: #fff7e6;
+  border-left: 4px solid #cc6600;
+  padding: 0.5em 1em;
+}
+
+.tiny {
+  font-size: 0.55em;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.highlight {
+  color: #cc0000;
+  font-weight: bold;
+}

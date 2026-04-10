@@ -1,0 +1,22 @@
+project:
+  type: default
+  output-dir: _site
+
+format:
+  revealjs:
+    theme: [simple, custom.scss]
+    slide-number: c/t
+    width: 1280
+    height: 720
+    incremental: false
+    embed-resources: false
+    fig-cap-location: bottom
+    transition: fade
+    footer: "Lymphoma TLS outcome · github.com/htlin222/lymphoma-TLS-outcome"
+    chalkboard: false
+    menu:
+      side: left
+      width: normal
+    navigation-mode: linear
+    history: true
+    auto-stretch: true

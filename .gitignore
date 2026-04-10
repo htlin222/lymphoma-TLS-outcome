@@ -124,6 +124,11 @@ docs/archive/test-reports/
 !tests/fixtures/**/*.txt
 !tests/fixtures/**/*.svg
 
+# Slides assets (talk deck figures must be tracked for gh-pages publish)
+!slides/figures/**/*.png
+!slides/figures/**/*.jpg
+!slides/figures/**/*.svg
+
 # ==========================================
 # Projects Directory
 # ==========================================
