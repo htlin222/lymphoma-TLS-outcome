@@ -1,0 +1,28 @@
+population:
+  description: ""
+  age_range: ""
+  condition: ""
+intervention:
+  description: ""
+comparison:
+  description: ""
+outcomes:
+  primary:
+    - name: ""
+      type: ""
+      unit: ""
+  secondary: []
+setting:
+  timeframe: ""
+  geography: ""
+study_types:
+  include: []
+  exclude: []
+analysis_type:
+  preliminary: ""          # pairwise | nma_candidate
+  confirmed: ""            # pairwise | nma | pooled_proportion | narrative
+  confirmation_stage: ""   # stage at which confirmed (e.g., "03_screening" or "05_extraction")
+  rationale: ""
+  single_arm_proportion: ""  # estimated % of single-arm studies
+  transitivity_plausible: "" # yes | uncertain | no
+  network_connected: ""      # yes | no | unknown

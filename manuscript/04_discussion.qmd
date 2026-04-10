@@ -1,0 +1,48 @@
+# Discussion
+
+## Principal Findings
+
+In this study, we presented meta-pipe, the first end-to-end LLM-agent pipeline for systematic review and meta-analysis.
+The pipeline covers all 10 stages from topic brainstorming through submission-ready manuscript, a scope that no existing tool achieves.
+In a demonstration meta-analysis of immune checkpoint inhibitors in triple-negative breast cancer, the pipeline produced a publication-ready manuscript in approximately 14 hours, representing a 75-80% reduction in time compared with manual workflows.
+
+## Comparison with Existing Tools
+
+Existing automation tools address critical but limited segments of the SR/MA workflow.
+ASReview and Rayyan have demonstrated substantial time savings in screening, and TrialMind has shown promising results in combined screening and extraction.
+However, the downstream stages of statistical analysis, manuscript generation, and quality assurance have remained outside the scope of these tools.
+
+meta-pipe addresses this gap through integration of established statistical methods (R meta/metafor packages) with LLM-assisted automation and Quarto-based manuscript rendering.
+This integration enables a continuous data flow from search results through final manuscript, reducing the manual transfer and reformatting steps that introduce errors and consume time.
+
+## Human-in-the-Loop Design
+
+A key design decision in meta-pipe is the retention of five mandatory human decision points throughout the pipeline.
+This design directly addresses the concern raised by Gartlehner et al. that current LLM tools are "not yet ready for standalone use" in evidence synthesis.
+
+Rather than attempting full automation, meta-pipe positions the LLM as an intelligent assistant that handles routine tasks (format conversion, initial screening, result formatting) while preserving human judgment for decisions requiring domain expertise (eligibility criteria, quality assessment, clinical interpretation).
+The automated quality gates (kappa thresholds, overclaim detection, PRISMA validation) provide an additional safety layer that catches errors before they propagate to downstream stages.
+
+## Reproducibility
+
+Reproducibility is ensured through several mechanisms: R package versions are locked via renv, Python dependencies are managed through uv with lock files, and all intermediate artifacts are version-controlled with complete provenance tracking.
+The skill-based architecture means that the exact workflow steps are documented and repeatable, in contrast to ad hoc manual processes.
+
+## Limitations
+
+Several limitations should be acknowledged.
+First, this study presents a single demonstration case; formal validation against published systematic reviews with agreement metrics is needed.
+Second, the pipeline depends on the Claude API (Anthropic), introducing both cost considerations (approximately $15-30 per project) and a dependency on a commercial service.
+Third, users require familiarity with R, Python, and command-line tools, limiting accessibility to researchers with programming experience.
+Fourth, the current implementation supports English-language literature only.
+Fifth, the demonstration was conducted by the pipeline developers, introducing potential performance bias that independent evaluation would address.
+
+## Future Directions
+
+Planned extensions include: (1) a formal validation study reproducing 5-10 published Cochrane reviews to quantify concordance with human-conducted meta-analyses; (2) support for living systematic reviews with automated search updates; (3) a web-based dashboard interface to reduce the programming barrier; (4) integration of local LLM options to address cost and data privacy concerns; and (5) multi-language literature support.
+
+## Conclusions
+
+meta-pipe demonstrates that end-to-end AI-assisted systematic review and meta-analysis is feasible when designed with appropriate human oversight and automated quality gates.
+The pipeline achieves 75-80% time savings while maintaining publication-quality output, addressing a critical gap in the evidence synthesis automation landscape.
+As the volume of clinical research continues to grow, tools that accelerate rigorous evidence synthesis without compromising quality will become increasingly essential.

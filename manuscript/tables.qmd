@@ -1,0 +1,63 @@
+# Tables {.unnumbered}
+
+## Table 1. meta-pipe Pipeline Stages {#tbl-stages}
+
+| Stage | Module | Key Tasks | Outputs | Human Decision |
+|-------|--------|-----------|---------|----------------|
+| 00 | Topic intake | Brainstorming, feasibility assessment | PICO definition, eligibility criteria | Yes: define scope |
+| 01-02 | Search & bibliography | Database search, deduplication | dedupe.bib, search strategy | No |
+| 03 | Screening | Dual-review title/abstract screening | decisions.csv, kappa statistic | Yes: resolve disagreements |
+| 03b | Analysis gate | Pairwise vs NMA determination | analysis-type-decision.md | Yes: confirm analysis type |
+| 04 | Full-text management | PDF retrieval, Unpaywall integration | manifest.csv, full-text PDFs | No |
+| 05 | Data extraction | LLM-assisted extraction, validation | extraction.csv, data dictionary | Yes: review flagged items |
+| 06 | Statistical analysis | Meta-analysis (pairwise or NMA) | Forest plots, effect estimates | No |
+| 07 | Manuscript | Quarto-based assembly, rendering | IMRaD manuscript (HTML/PDF/DOCX) | No |
+| 08 | Peer review | GRADE assessment, SoF tables | GRADE profiles, reviewer report | Yes: quality judgments |
+| 09 | Quality assurance | PRISMA validation, overclaim detection | Readiness score (0-100%) | No |
+
+: meta-pipe pipeline stages with key tasks, outputs, and human decision points. {#tbl-stages}
+
+## Table 2. Feature Comparison with Existing Tools {#tbl-comparison}
+
+| Feature | ASReview | Rayyan | Covidence | RobotReviewer | otto-SR | TrialMind | **meta-pipe** |
+|---------|----------|--------|-----------|---------------|---------|-----------|---------------|
+| Screening | Yes | Yes | Yes | - | Yes | Yes | **Yes** |
+| Data extraction | - | - | Yes | - | Yes | Yes | **Yes** |
+| Risk of bias | - | - | - | Yes | - | - | **Yes** |
+| Statistical analysis | - | - | - | - | - | - | **Yes** |
+| NMA support | - | - | - | - | - | - | **Yes** |
+| Manuscript generation | - | - | - | - | - | - | **Yes** |
+| PRISMA validation | - | - | - | - | - | - | **Yes** |
+| GRADE assessment | - | - | - | - | - | - | **Yes** |
+| Overclaim detection | - | - | - | - | - | - | **Yes** |
+| End-to-end | No | No | No | No | Partial | Partial | **Yes** |
+
+: Feature comparison of meta-pipe with existing systematic review automation tools. {#tbl-comparison}
+
+## Table 3. Characteristics of Included Trials {#tbl-studies}
+
+| Trial | Year | N | ICI Agent | Chemotherapy Backbone | Primary Endpoint |
+|-------|------|---|-----------|----------------------|------------------|
+| KEYNOTE-522 | 2020 | 1,174 | Pembrolizumab | Carboplatin + paclitaxel → AC | pCR |
+| IMpassion031 | 2020 | 333 | Atezolizumab | nab-Paclitaxel → AC | pCR |
+| GeparNuevo | 2019 | 174 | Durvalumab | nab-Paclitaxel → EC | pCR |
+| NeoTRIPaPDL1 | 2022 | 280 | Atezolizumab | Carboplatin + nab-paclitaxel | pCR |
+| CamRelief | 2024 | 441 | Camrelizumab | Carboplatin + paclitaxel → EC | pCR |
+
+: Characteristics of the five randomized controlled trials included in the demonstration meta-analysis. ICI, immune checkpoint inhibitor; AC, doxorubicin-cyclophosphamide; EC, epirubicin-cyclophosphamide; pCR, pathologic complete response. {#tbl-studies}
+
+## Table 4. Time Investment by Pipeline Stage {#tbl-time}
+
+| Stage | Manual (est. hours) | meta-pipe (hours) | Savings |
+|-------|--------------------:|-------------------:|--------:|
+| Topic & protocol | 8-12 | 2 | 75-83% |
+| Search & deduplication | 8-16 | 1 | 88-94% |
+| Screening | 20-40 | 2 | 90-95% |
+| Full-text retrieval | 4-8 | 1 | 75-88% |
+| Data extraction | 20-40 | 3 | 85-93% |
+| Statistical analysis | 16-24 | 2 | 88-92% |
+| Manuscript writing | 24-40 | 2 | 92-95% |
+| Quality assurance | 8-12 | 1 | 88-92% |
+| **Total** | **108-192** | **14** | **87-93%** |
+
+: Estimated time investment for manual versus meta-pipe-assisted systematic review and meta-analysis. {#tbl-time}

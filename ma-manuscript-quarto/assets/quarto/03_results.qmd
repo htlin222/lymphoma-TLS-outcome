@@ -1,0 +1,22 @@
+# Results
+
+<!-- Draft from 07_manuscript/result_claims.csv and result_paragraphs.md -->
+
+## Study Selection
+
+## Study Characteristics
+
+<!-- STUDY_CHARACTERISTICS_START -->
+<!-- STUDY_CHARACTERISTICS_END -->
+
+## Quantitative Synthesis
+
+<!-- RESULT_SUMMARY_TABLE_START -->
+<!-- RESULT_SUMMARY_TABLE_END -->
+
+<!-- RESULT_PARAGRAPHS_START -->
+<!-- RESULT_PARAGRAPHS_END -->
+
+## Sensitivity and Subgroup Analyses
+
+## Publication Bias

@@ -1,0 +1,8 @@
+study_id,author,year,country,design,n_total,n_intervention,n_control,mean_age,pct_female,intervention,control,duration_weeks,followup_months
+S1,Smith,2018,USA,RCT,113,58,55,42.3,62,Individual CBT,TAU,12,6
+S2,Jones,2019,UK,RCT,95,48,47,38.7,58,Group CBT,Waitlist,8,3
+S3,Chen,2020,China,RCT,156,78,78,35.2,65,Online CBT,TAU,10,6
+S4,Mueller,2017,Germany,RCT,82,41,41,45.1,55,Individual CBT,TAU,16,12
+S5,Garcia,2021,Spain,RCT,124,62,62,39.8,60,Group CBT,Waitlist,12,6
+S6,Kim,2019,Korea,RCT,68,34,34,41.5,70,Individual CBT,TAU,8,3
+S7,Brown,2020,Canada,RCT,140,70,70,36.9,58,Online CBT,Waitlist,12,6

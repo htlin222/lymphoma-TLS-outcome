@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 12px; }
+    .title { font-size: 14px; font-weight: bold; }
+    .axis { stroke: #333; stroke-width: 1; }
+    .funnel { fill: none; stroke: #999; stroke-width: 1; stroke-dasharray: 4,4; }
+    .point { fill: #333; r: 5; }
+    .pooled { stroke: #1a73e8; stroke-width: 2; stroke-dasharray: 2,2; }
+  </style>
+
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" class="title">Funnel Plot: HDRS (Publication Bias Assessment)</text>
+
+  <!-- Y-axis (Standard Error) -->
+  <line x1="50" y1="50" x2="50" y2="350" class="axis"/>
+  <text x="30" y="55">0</text>
+  <text x="30" y="150">0.1</text>
+  <text x="30" y="250">0.2</text>
+  <text x="30" y="350">0.3</text>
+  <text x="25" y="200" text-anchor="middle" transform="rotate(-90,25,200)">Standard Error</text>
+
+  <!-- X-axis (Effect Size) -->
+  <line x1="50" y1="350" x2="450" y2="350" class="axis"/>
+  <text x="50" y="370">-2.0</text>
+  <text x="150" y="370">-1.0</text>
+  <text x="250" y="370">0</text>
+  <text x="350" y="370">1.0</text>
+  <text x="450" y="370">2.0</text>
+  <text x="250" y="390" text-anchor="middle">Standardized Mean Difference</text>
+
+  <!-- Funnel lines (95% CI) -->
+  <line x1="250" y1="50" x2="50" y2="350" class="funnel"/>
+  <line x1="250" y1="50" x2="450" y2="350" class="funnel"/>
+
+  <!-- Pooled estimate line -->
+  <line x1="175" y1="50" x2="175" y2="350" class="pooled"/>
+
+  <!-- Study points (positioned based on SMD and SE) -->
+  <!-- Smith 2018: SMD=-0.72, SE=0.192 -->
+  <circle cx="178" cy="240" class="point" r="5"/>
+
+  <!-- Jones 2019: SMD=-0.85, SE=0.212 -->
+  <circle cx="165" cy="262" class="point" r="5"/>
+
+  <!-- Chen 2020: SMD=-0.68, SE=0.164 -->
+  <circle cx="182" cy="213" class="point" r="5"/>
+
+  <!-- Mueller 2017: SMD=-0.91, SE=0.228 -->
+  <circle cx="160" cy="278" class="point" r="5"/>
+
+  <!-- Garcia 2021: SMD=-0.76, SE=0.184 -->
+  <circle cx="175" cy="234" class="point" r="5"/>
+
+  <!-- Legend -->
+  <line x1="320" y1="80" x2="350" y2="80" class="pooled"/>
+  <text x="355" y="85">Pooled SMD = -0.77</text>
+
+  <line x1="320" y1="100" x2="350" y2="100" class="funnel"/>
+  <text x="355" y="105">95% CI funnel</text>
+
+  <circle cx="335" cy="120" class="point" r="5"/>
+  <text x="355" y="125">Individual studies</text>
+
+  <!-- Egger test result -->
+  <text x="320" y="160" font-size="10">Egger's test: p = 0.71</text>
+  <text x="320" y="175" font-size="10">No evidence of asymmetry</text>
+</svg>

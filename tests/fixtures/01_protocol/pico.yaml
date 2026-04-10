@@ -1,0 +1,53 @@
+population:
+  description: Adults with major depressive disorder (MDD)
+  terms:
+    - major depressive disorder
+    - depression
+    - MDD
+    - depressive episode
+
+intervention:
+  description: Cognitive behavioral therapy (CBT)
+  terms:
+    - cognitive behavioral therapy
+    - CBT
+    - cognitive therapy
+    - behavioral therapy
+
+comparator:
+  description: Treatment as usual or waitlist control
+  terms:
+    - treatment as usual
+    - TAU
+    - waitlist
+    - no treatment
+    - placebo
+
+outcomes:
+  primary:
+    - name: Depression severity
+      measure: Hamilton Depression Rating Scale (HDRS)
+      type: continuous
+      direction: lower is better
+  secondary:
+    - name: Response rate
+      measure: ≥50% reduction in HDRS
+      type: binary
+    - name: Remission rate
+      measure: HDRS ≤7
+      type: binary
+
+study_design:
+  - randomized controlled trial
+  - RCT
+
+date_range:
+  start: "2010-01-01"
+  end: "2024-12-31"
+
+languages:
+  - English
+
+databases:
+  - PubMed
+  - Scopus

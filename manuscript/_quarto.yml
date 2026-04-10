@@ -1,0 +1,27 @@
+project:
+  type: manuscript
+  output-dir: output
+
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    embed-resources: true
+    theme: cosmo
+  docx:
+    toc: true
+    number-sections: true
+  typst:
+    toc: true
+    number-sections: true
+    columns: 1
+    margin:
+      x: 1in
+      y: 1in
+    papersize: us-letter
+    mainfont: "New Computer Modern"
+    fontsize: 11pt

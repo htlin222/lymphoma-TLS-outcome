@@ -1,0 +1,6 @@
+outcome_id,test,statistic,pval,interpretation
+O1,Egger regression,t=0.42,0.71,No evidence of asymmetry
+O1,Begg rank correlation,z=0.24,0.81,No evidence of bias
+O1,Trim-and-fill,imputed=0,NA,No studies imputed
+O2,Egger regression,t=1.15,0.45,Insufficient studies (k=3)
+O3,Egger regression,t=0.89,0.54,Insufficient studies (k=2)

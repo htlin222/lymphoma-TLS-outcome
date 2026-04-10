@@ -1,0 +1,25 @@
+# Tables {.unnumbered}
+
+![](table_images/table1_characteristics.png){width=100%}
+
+\newpage
+
+![](table_images/table2_efficacy.png){width=100%}
+
+\newpage
+
+![](table_images/table3_safety.png){width=100%}
+
+\newpage
+
+# Supplementary Tables {.unnumbered}
+
+![](table_images/supptable1_pcr.png){width=100%}
+
+\newpage
+
+![](table_images/supptable2_efs.png){width=100%}
+
+\newpage
+
+![](table_images/supptable3_os.png){width=100%}

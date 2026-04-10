@@ -1,0 +1,8 @@
+record_id,doi,pmid,title,file_path,access_notes
+PMID25601234,10.1002/jclp.22145,25601234,"Efficacy of cognitive behavioral therapy for major depression",smith2015.pdf,Open access
+PMID29456789,10.1017/S0033291718000284,29456789,"Group cognitive behavioral therapy versus treatment as usual",chen2018.pdf,Institutional access
+PMID32789012,10.1016/j.invent.2020.100345,32789012,"Internet-delivered CBT for major depressive disorder",williams2020.pdf,Open access (gold)
+PMID31234567,10.1192/bjp.2019.156,31234567,"Cognitive therapy for treatment-resistant depression",garcia2019.pdf,Author request
+PMID34567890,10.1093/fampra/cmab045,34567890,"Brief cognitive behavioral therapy for depression in primary care",tanaka2021.pdf,PubMed Central
+Scopus85012345678,10.1017/gmh.2016.10,,Effectiveness of CBT in low-income settings,patel2016.pdf,Open access
+Scopus85048901234,10.1080/13607863.2018.1475735,,Cognitive behavioral therapy for depression in older adults,hoffman2019.pdf,Institutional access

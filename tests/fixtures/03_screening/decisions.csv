@@ -1,0 +1,10 @@
+record_id,title,decision_r1,decision_r2,final_decision,exclusion_reason
+PMID25601234,"Efficacy of cognitive behavioral therapy for major depression: A randomized controlled trial",include,include,include,
+PMID29456789,"Group cognitive behavioral therapy versus treatment as usual for depression: Results from a multicenter trial",include,include,include,
+PMID32789012,"Internet-delivered CBT for major depressive disorder: A pilot randomized trial",include,include,include,
+PMID31234567,"Cognitive therapy for treatment-resistant depression: A randomized trial",include,maybe,include,
+PMID34567890,"Brief cognitive behavioral therapy for depression in primary care: A cluster randomized trial",include,include,include,
+PMID28901234,"Cognitive behavioral therapy for comorbid anxiety and depression",exclude,exclude,exclude,wrong population (comorbid anxiety focus)
+PMID36012345,"Mindfulness-enhanced cognitive therapy for recurrent depression prevention",exclude,exclude,exclude,wrong intervention (prevention not treatment)
+Scopus85012345678,"Effectiveness of CBT in low-income settings: A randomized trial",include,include,include,
+Scopus85048901234,"Cognitive behavioral therapy for depression in older adults: A systematic comparison",include,include,include,

@@ -1,0 +1,8 @@
+outcome_id,analysis_type,excluded_study,k,estimate,ci_lb,ci_ub,I2,interpretation
+O1,leave_one_out,S1,4,-0.78,-0.96,-0.60,0.0,Stable
+O1,leave_one_out,S2,4,-0.74,-0.91,-0.57,0.0,Stable
+O1,leave_one_out,S3,4,-0.79,-0.98,-0.60,0.0,Stable
+O1,leave_one_out,S4,4,-0.73,-0.89,-0.57,0.0,Stable
+O1,leave_one_out,S5,4,-0.77,-0.95,-0.59,0.0,Stable
+O1,low_rob_only,NA,3,-0.74,-0.94,-0.54,0.0,Consistent with main
+O1,fixed_effect,NA,5,-0.765,-0.920,-0.610,NA,Same as RE (I2=0)

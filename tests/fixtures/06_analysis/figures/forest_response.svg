@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 12px; }
+    .title { font-size: 14px; font-weight: bold; }
+    .axis { stroke: #333; stroke-width: 1; }
+    .ci-line { stroke: #333; stroke-width: 2; }
+    .point { fill: #333; }
+    .diamond { fill: #1a73e8; }
+    .null-line { stroke: #999; stroke-width: 1; stroke-dasharray: 4,4; }
+  </style>
+
+  <!-- Title -->
+  <text x="350" y="25" text-anchor="middle" class="title">Forest Plot: Treatment Response (≥50% improvement)</text>
+
+  <!-- Study labels -->
+  <text x="50" y="80">Smith 2018</text>
+  <text x="50" y="120">Chen 2020</text>
+  <text x="50" y="160">Garcia 2021</text>
+
+  <!-- Null line (RR = 1) -->
+  <line x1="350" y1="50" x2="350" y2="220" class="null-line"/>
+
+  <!-- Confidence intervals and point estimates (log scale, centered at RR=1) -->
+  <!-- Smith 2018: RR=1.53 [0.85, 2.72] -->
+  <line x1="300" y1="80" x2="450" y2="80" class="ci-line"/>
+  <rect x="390" y="72" width="15" height="15" class="point"/>
+
+  <!-- Chen 2020: RR=1.75 [1.03, 2.98] -->
+  <line x1="340" y1="120" x2="480" y2="120" class="ci-line"/>
+  <rect x="410" y="112" width="17" height="17" class="point"/>
+
+  <!-- Garcia 2021: RR=1.46 [0.80, 2.66] -->
+  <line x1="290" y1="160" x2="445" y2="160" class="ci-line"/>
+  <rect x="380" y="152" width="14" height="14" class="point"/>
+
+  <!-- Pooled estimate diamond -->
+  <polygon points="350,200 395,210 350,220 380,210" class="diamond"/>
+  <text x="50" y="215" font-weight="bold">Overall (RE)</text>
+
+  <!-- X-axis (log scale) -->
+  <line x1="200" y1="240" x2="550" y2="240" class="axis"/>
+  <text x="200" y="260">0.5</text>
+  <text x="350" y="260">1.0</text>
+  <text x="450" y="260">2.0</text>
+  <text x="520" y="260">3.0</text>
+  <text x="350" y="285" text-anchor="middle">Risk Ratio</text>
+
+  <!-- Favors labels -->
+  <text x="275" y="275" text-anchor="middle" font-size="10">Favors Control</text>
+  <text x="450" y="275" text-anchor="middle" font-size="10">Favors CBT</text>
+
+  <!-- Effect size column -->
+  <text x="580" y="60" font-weight="bold">RR [95% CI]</text>
+  <text x="580" y="80">1.53 [0.85, 2.72]</text>
+  <text x="580" y="120">1.75 [1.03, 2.98]</text>
+  <text x="580" y="160">1.46 [0.80, 2.66]</text>
+  <text x="580" y="215" font-weight="bold">1.52 [1.11, 2.08]</text>
+</svg>

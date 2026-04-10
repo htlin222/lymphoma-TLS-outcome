@@ -1,0 +1,45 @@
+* text=auto eol=lf
+
+# Explicit text
+*.md text
+*.txt text
+*.csv text
+*.tsv text
+*.yaml text
+*.yml text
+*.json text
+*.qmd text
+*.bib text
+*.log text
+*.R text
+*.py text
+*.sh text
+*.toml text
+*.ini text
+*.cfg text
+*.svg text
+
+# Binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tif binary
+*.tiff binary
+*.bmp binary
+*.webp binary
+*.ico binary
+*.psd binary
+*.pdf binary
+*.sqlite binary
+*.db binary
+*.parquet binary
+*.arrow binary
+*.feather binary
+*.h5 binary
+*.hdf5 binary
+*.hdf binary
+*.sav binary
+*.dta binary
+*.rds binary
+*.rda binary

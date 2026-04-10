@@ -1,0 +1,30 @@
+# Figures {.unnumbered}
+
+## Figure 1. meta-pipe Pipeline Architecture {#fig-pipeline}
+
+<!-- TODO: Generate pipeline architecture diagram -->
+<!-- Source: TikZ, Mermaid, or draw.io -->
+<!-- Export: figures/fig1_pipeline.png (300 DPI) -->
+
+![meta-pipe pipeline architecture. The 10-stage workflow proceeds from topic intake (Stage 00) through submission preparation (Stage 10). Blue boxes indicate automated stages; orange diamonds indicate mandatory human decision points. Arrows represent data flow between stages. The pipeline integrates Claude AI (LLM orchestration), Python (automation), R (statistical analysis), and Quarto (manuscript rendering).](figures/fig1_pipeline.png){#fig-pipeline}
+
+## Figure 2. PRISMA Flow Diagram {#fig-prisma}
+
+<!-- TODO: Copy from projects/ici-breast-cancer/ or regenerate -->
+<!-- Source: prisma_flow.py -->
+
+![PRISMA 2020 flow diagram for the demonstration meta-analysis of immune checkpoint inhibitors in triple-negative breast cancer. Numbers in parentheses indicate records at each stage.](figures/fig2_prisma.png){#fig-prisma}
+
+## Figure 3. Forest Plot: Pathologic Complete Response {#fig-forest}
+
+<!-- TODO: Copy from projects/ici-breast-cancer/06_analysis/ -->
+<!-- Source: 01_pCR_meta_analysis.R -->
+
+![Forest plot of pathologic complete response rates for immune checkpoint inhibitor plus chemotherapy versus chemotherapy alone. The pooled risk ratio was 1.26 (95% CI 1.16-1.37, p=0.0015) with no heterogeneity (I^2^=0%). The diamond represents the pooled effect estimate.](figures/fig3_forest.png){#fig-forest}
+
+## Figure 4. Publication Readiness Score {#fig-readiness}
+
+<!-- TODO: Generate radar chart showing 8 QA components -->
+<!-- Source: New R script using ggplot2/fmsb -->
+
+![Publication readiness score for the demonstration meta-analysis. The radar chart displays scores across eight quality components: PRISMA compliance, citation completeness, figure quality, statistical reporting, GRADE assessment, overclaim detection, word count compliance, and supplementary materials. The overall score was 97%.](figures/fig4_readiness.png){#fig-readiness}

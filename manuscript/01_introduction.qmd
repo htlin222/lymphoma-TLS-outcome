@@ -1,0 +1,25 @@
+# Introduction
+
+<!-- Para 1: SR/MA as gold standard; time/resource burden -->
+Systematic reviews and meta-analyses represent the highest level of evidence in the hierarchy of clinical research, forming the foundation for clinical practice guidelines, health policy decisions, and regulatory approvals.
+However, the conduct of a rigorous SR/MA is resource-intensive, requiring an estimated 100 or more person-hours and 12 to 18 months from inception to publication.
+<!-- TODO: cite Borah 2017, Tsafnat 2014 -->
+
+<!-- Para 2: Existing automation tools and their scope -->
+Several automation tools have emerged to address this burden.
+ASReview and Rayyan employ active learning and crowd-based approaches for title and abstract screening.
+Covidence extends coverage to data extraction.
+RobotReviewer automates risk-of-bias assessment.
+More recently, LLM-based tools such as otto-SR and TrialMind have demonstrated promising results in screening and extraction tasks.
+<!-- TODO: cite van de Schoot 2021, Ouzzani 2016, Kellermeyer 2018, Marshall 2017, Blaizot 2022, Choi 2024 -->
+
+<!-- Para 3: The gap -->
+Despite these advances, no existing tool covers the complete SR/MA workflow.
+Statistical analysis, manuscript generation, and publication quality assurance remain entirely manual processes.
+A 2025 scoping review of 37 studies on LLMs for systematic reviews concluded that current tools are "not yet ready for standalone use," citing concerns about accuracy, reproducibility, and quality control.
+<!-- TODO: cite Gartlehner 2025 -->
+
+<!-- Para 4: Aim -->
+To address this gap, we developed meta-pipe, an LLM-agent pipeline that orchestrates the complete SR/MA workflow from topic brainstorming (Stage 00) through submission-ready manuscript (Stage 10).
+The pipeline integrates large language model capabilities with established statistical methods and automated quality gates, maintaining human oversight at critical decision points.
+We demonstrate its application on a meta-analysis of immune checkpoint inhibitors in triple-negative breast cancer.

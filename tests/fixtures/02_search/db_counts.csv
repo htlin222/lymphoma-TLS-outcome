@@ -1,0 +1,4 @@
+database,raw_count,after_dedupe,source_file
+PubMed,8,7,results.bib
+Scopus,3,2,scopus.bib
+Total,11,9,merged.bib

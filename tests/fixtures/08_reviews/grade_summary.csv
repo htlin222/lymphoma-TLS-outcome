@@ -1,0 +1,4 @@
+outcome_id,outcome_name,n_studies,n_participants,risk_of_bias,inconsistency,indirectness,imprecision,publication_bias,upgrade,certainty,notes
+O1,HDRS depression score,5,706,no serious,-,-,-,not detected,,moderate,Some concerns in 2 studies re: blinding
+O2,Response rate,3,442,no serious,no serious,no serious,serious,not detected,,moderate,Wide CI crosses minimal important difference
+O3,PHQ-9 depression score,2,536,serious,no serious,no serious,no serious,not detected,,low,High dropout in one study

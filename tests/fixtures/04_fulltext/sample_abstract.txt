@@ -1,0 +1,16 @@
+Title: Efficacy of cognitive behavioral therapy for major depression: A randomized controlled trial
+
+Authors: Smith JA, Johnson MB
+
+Abstract:
+Background: Cognitive behavioral therapy (CBT) is widely recommended for major depressive disorder (MDD), but evidence from rigorous trials remains limited.
+
+Methods: We conducted a randomized controlled trial at two academic medical centers. Adults aged 18-65 with MDD (DSM-5 criteria, HDRS ≥17) were randomized 1:1 to 12 sessions of individual CBT (n=60) or waitlist control (n=60). The primary outcome was change in Hamilton Depression Rating Scale (HDRS) score at 8 weeks.
+
+Results: Of 120 participants randomized, 113 (94%) completed the 8-week assessment. Mean HDRS scores decreased from 22.4 (SD 4.2) to 10.2 (SD 5.3) in the CBT group versus 21.8 (SD 4.5) to 15.8 (SD 6.1) in controls. The between-group difference was -5.6 points (95% CI: -7.8 to -3.4, p<0.001), corresponding to a large effect size (Cohen's d=0.85). Response rates (≥50% HDRS reduction) were 60% for CBT vs 33% for control (RR=1.84, 95% CI: 1.2-2.8).
+
+Conclusions: CBT is effective for reducing depression symptoms in adults with MDD. These findings support CBT as a first-line treatment option.
+
+Keywords: depression, cognitive behavioral therapy, randomized controlled trial, major depressive disorder
+
+Trial registration: NCT01234567

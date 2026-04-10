@@ -1,0 +1,10 @@
+# Abstract {.unnumbered}
+
+<!-- Structured abstract is in index.qmd YAML frontmatter -->
+<!-- This file is reserved for graphical abstract or key points if needed -->
+
+## Key Points {.unnumbered}
+
+- **Question**: Can an LLM-agent pipeline automate the complete systematic review and meta-analysis workflow from topic conception to publication-ready manuscript?
+- **Findings**: meta-pipe, a 10-stage modular pipeline, produced a publication-ready meta-analysis of immune checkpoint inhibitors in triple-negative breast cancer (5 RCTs, N=2,402) in approximately 14 hours with a publication readiness score of 95-98%.
+- **Meaning**: End-to-end AI-assisted evidence synthesis is feasible when combined with human-in-the-loop quality gates, achieving 75-80% time savings compared with manual workflows.

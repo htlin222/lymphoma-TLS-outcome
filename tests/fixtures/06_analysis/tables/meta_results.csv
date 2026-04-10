@@ -1,0 +1,4 @@
+outcome_id,outcome_name,measure,k,n_total,estimate,se,ci_lb,ci_ub,z,pval,tau2,I2,Q,Q_pval,prediction_lb,prediction_ub
+O1,HDRS,SMD,5,570,-0.765,0.080,-0.922,-0.607,-9.53,<0.001,0.000,0.0,2.34,0.674,-0.922,-0.607
+O2,Response rate,RR,3,375,1.52,0.158,1.11,2.08,2.65,0.008,0.012,18.2,2.44,0.295,0.89,2.59
+O3,PHQ-9,SMD,2,208,-0.66,0.145,-0.94,-0.38,-4.55,<0.001,0.005,8.5,1.09,0.297,-1.12,-0.20

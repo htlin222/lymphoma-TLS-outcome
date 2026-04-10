@@ -1,0 +1,71 @@
+# Methods
+
+## Pipeline Architecture
+
+meta-pipe is organized into 10 sequential stages, each implemented as a self-contained skill module with defined inputs, outputs, and quality thresholds (@tbl-stages).
+The pipeline follows a modular architecture in which each stage can be executed independently while maintaining data flow through standardized file formats (CSV, BibTeX, and Quarto markdown).
+
+<!-- TODO: Insert Table 1 reference -->
+
+Human decision points are embedded at five critical junctures: (1) PICO definition and eligibility criteria; (2) screening disagreement resolution; (3) analysis type selection (pairwise vs network meta-analysis); (4) GRADE quality assessment; and (5) interpretation and clinical implications.
+
+## Technology Stack
+
+The pipeline integrates four complementary technologies:
+
+1. **LLM orchestration**: Claude (Anthropic) serves as the AI backbone, operating through a skill-based agent architecture. Each pipeline stage has a dedicated skill module containing workflow guidance, command references, and validation criteria.
+
+2. **Python automation**: Twenty-four Python scripts (~3,600 lines of code) handle data processing, format conversion, LLM-assisted screening and extraction, validation, and quality assurance. Package management uses uv with virtual environments.
+
+3. **R statistical engine**: The meta and metafor packages perform meta-analysis computations, including random-effects models (REML estimation with Hartung-Knapp adjustment), heterogeneity assessment, publication bias diagnostics, and subgroup analyses. Package versions are locked via renv for reproducibility.
+
+4. **Quarto rendering**: Manuscript assembly uses Quarto with Typst backend, generating HTML, DOCX, and PDF outputs with integrated figures, tables, and citations.
+
+## Search and Screening (Stages 01-03)
+
+Literature searches are conducted in a minimum of two databases (PubMed and Scopus, per PRISMA requirements), with optional extension to Embase and the Cochrane Library.
+Search strategies are developed using PICO-derived terms combined with Boolean operators and Medical Subject Headings.
+
+Title and abstract screening employs LLM-assisted classification with a dual-review design.
+Inter-rater agreement is quantified using Cohen's kappa, with a minimum threshold of 0.60 for acceptable agreement.
+Disagreements are resolved through human adjudication.
+
+## Data Extraction and Quality Assessment (Stages 04-05)
+
+Full-text retrieval uses Unpaywall API integration supplemented by manual acquisition.
+Data extraction employs LLM-assisted parsing of PDF documents with a structured extraction template defining all required fields.
+
+Extracted data undergo automated validation including range checks, consistency verification, and confidence scoring.
+Low-confidence extractions are flagged for manual review.
+Risk of bias is assessed using the Cochrane RoB 2 tool for randomized trials or ROBINS-I for observational studies.
+
+## Statistical Analysis (Stage 06)
+
+Pairwise meta-analyses use random-effects models with restricted maximum likelihood estimation and the Hartung-Knapp adjustment for confidence intervals.
+Heterogeneity is quantified using the I^2^ statistic, Cochran's Q test, and prediction intervals.
+
+Publication bias is assessed using funnel plots, Egger's regression test, and trim-and-fill analysis.
+Sensitivity analyses include leave-one-out analysis, influence diagnostics, and subgroup analyses by prespecified variables.
+
+For comparisons involving three or more interventions, network meta-analysis is performed using Bayesian methods (gemtc package) with frequentist sensitivity analysis (netmeta package).
+
+## Manuscript Generation (Stage 07)
+
+Manuscript assembly uses a template-based approach with Quarto includes for each IMRaD section.
+The pipeline generates structured content from analysis outputs, including result paragraphs with effect estimates, confidence intervals, and p-values.
+
+Automated scripts handle PRISMA flow diagram generation, citation management, figure and table integration, and journal-specific formatting.
+Word counts and section structure are validated against target journal requirements.
+
+## Quality Assurance (Stages 08-09)
+
+Publication readiness is quantified using an objective 0-100% score comprising eight components: PRISMA compliance, citation completeness, figure quality (>=300 DPI), statistical reporting standards, GRADE assessment, overclaim detection, word count compliance, and supplementary material completeness.
+
+The overclaim detection system identifies 12 common patterns of unsupported claims, including causal language for observational data, generalization beyond study populations, and recommendations without sufficient evidence level.
+
+## Demonstration Study
+
+To demonstrate the pipeline, we conducted a meta-analysis of immune checkpoint inhibitors added to neoadjuvant chemotherapy for triple-negative breast cancer.
+The PICO framework was defined as follows: (P) patients with early-stage TNBC; (I) immune checkpoint inhibitor plus neoadjuvant chemotherapy; (C) neoadjuvant chemotherapy alone; (O) pathologic complete response (primary), event-free survival, overall survival, and serious adverse events.
+
+Eligibility was restricted to phase II-III randomized controlled trials published through 2025.

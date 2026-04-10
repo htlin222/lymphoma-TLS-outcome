@@ -1,0 +1,8 @@
+outcome_id,subgroup_var,subgroup_level,k,estimate,ci_lb,ci_ub,I2,Q_between,Q_pval
+O1,delivery,Individual,-0.82,-1.12,-0.52,0.0,1.24,0.265
+O1,delivery,Group,-0.81,-1.15,-0.47,0.0,,
+O1,delivery,Online,-0.70,-0.98,-0.42,0.0,,
+O1,duration,≤10 weeks,-0.77,-1.05,-0.49,0.0,0.18,0.671
+O1,duration,>10 weeks,-0.72,-1.08,-0.36,0.0,,
+O1,control,TAU,-0.77,-1.02,-0.52,0.0,0.08,0.777
+O1,control,Waitlist,-0.81,-1.12,-0.50,0.0,,

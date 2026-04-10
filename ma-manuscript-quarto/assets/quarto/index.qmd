@@ -1,0 +1,66 @@
+---
+title: "Meta-analysis Manuscript Title"
+author:
+  - name: "Author Name"
+    affiliations:
+      - name: "Institution"
+        department: "Department"
+    orcid: "0000-0000-0000-0000"
+    corresponding: true
+    email: "author@example.com"
+date: last-modified
+abstract: |
+  Background: ...
+  Methods: ...
+  Results: ...
+  Conclusions: ...
+keywords: [meta-analysis, systematic review]
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    embed-resources: true
+  docx:
+    toc: true
+    number-sections: true
+  typst:
+    toc: true
+    number-sections: true
+    columns: 1
+    margin:
+      x: 1in
+      y: 1in
+    papersize: us-letter
+    mainfont: "New Computer Modern"
+    fontsize: 11pt
+bibliography: references.bib
+csl: style.csl
+---
+
+{{< include 00_abstract.qmd >}}
+
+{{< pagebreak >}}
+
+{{< include 01_introduction.qmd >}}
+
+{{< pagebreak >}}
+
+{{< include 02_methods.qmd >}}
+
+{{< pagebreak >}}
+
+{{< include 03_results.qmd >}}
+
+{{< pagebreak >}}
+
+{{< include 04_discussion.qmd >}}
+
+{{< include tables.qmd >}}
+
+{{< include figures_legends.qmd >}}
+
+# References {.unnumbered}
+
+::: {#refs}
+:::

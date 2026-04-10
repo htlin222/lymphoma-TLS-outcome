@@ -1,0 +1,36 @@
+record_id,tool,domain,judgment,notes
+PMID25601234,RoB2,Randomization,low,Computer-generated sequence with concealment
+PMID25601234,RoB2,Deviations,low,Intention-to-treat analysis
+PMID25601234,RoB2,Missing data,low,<5% attrition both arms
+PMID25601234,RoB2,Outcome measurement,some concerns,Assessor blinding unclear
+PMID25601234,RoB2,Selective reporting,low,Protocol registered
+PMID29456789,RoB2,Randomization,low,Block randomization
+PMID29456789,RoB2,Deviations,low,Per-protocol and ITT reported
+PMID29456789,RoB2,Missing data,some concerns,12% attrition
+PMID29456789,RoB2,Outcome measurement,low,Blinded assessors
+PMID29456789,RoB2,Selective reporting,low,All outcomes reported
+PMID32789012,RoB2,Randomization,some concerns,Randomization method unclear
+PMID32789012,RoB2,Deviations,low,ITT analysis
+PMID32789012,RoB2,Missing data,high,25% dropout in control
+PMID32789012,RoB2,Outcome measurement,some concerns,Self-report outcomes
+PMID32789012,RoB2,Selective reporting,low,Protocol available
+PMID31234567,RoB2,Randomization,low,Central randomization
+PMID31234567,RoB2,Deviations,low,Analysis followed protocol
+PMID31234567,RoB2,Missing data,low,8% attrition
+PMID31234567,RoB2,Outcome measurement,low,Independent blinded raters
+PMID31234567,RoB2,Selective reporting,low,Pre-registered
+PMID34567890,RoB2,Randomization,low,Cluster randomization appropriate
+PMID34567890,RoB2,Deviations,some concerns,Some contamination between clusters
+PMID34567890,RoB2,Missing data,low,Low attrition
+PMID34567890,RoB2,Outcome measurement,some concerns,Practice-level variation
+PMID34567890,RoB2,Selective reporting,low,Published protocol
+Scopus85012345678,RoB2,Randomization,low,Adequate sequence generation
+Scopus85012345678,RoB2,Deviations,low,ITT analysis
+Scopus85012345678,RoB2,Missing data,some concerns,15% lost to follow-up
+Scopus85012345678,RoB2,Outcome measurement,low,Blinded outcome assessment
+Scopus85012345678,RoB2,Selective reporting,low,All outcomes reported
+Scopus85048901234,RoB2,Randomization,low,Computer randomization
+Scopus85048901234,RoB2,Deviations,low,Protocol followed
+Scopus85048901234,RoB2,Missing data,low,Low dropout
+Scopus85048901234,RoB2,Outcome measurement,some concerns,Some unblinded outcomes
+Scopus85048901234,RoB2,Selective reporting,low,Registered trial

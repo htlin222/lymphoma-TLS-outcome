@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 12px; }
+    .title { font-size: 14px; font-weight: bold; }
+    .axis { stroke: #333; stroke-width: 1; }
+    .grid { stroke: #ddd; stroke-width: 0.5; }
+    .ci-line { stroke: #333; stroke-width: 2; }
+    .point { fill: #333; }
+    .diamond { fill: #1a73e8; }
+    .null-line { stroke: #999; stroke-width: 1; stroke-dasharray: 4,4; }
+  </style>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">Forest Plot: HDRS (Depression Severity)</text>
+
+  <!-- Study labels -->
+  <text x="50" y="80">Smith 2018</text>
+  <text x="50" y="120">Jones 2019</text>
+  <text x="50" y="160">Chen 2020</text>
+  <text x="50" y="200">Mueller 2017</text>
+  <text x="50" y="240">Garcia 2021</text>
+
+  <!-- Null line (SMD = 0) -->
+  <line x1="400" y1="50" x2="400" y2="320" class="null-line"/>
+
+  <!-- Confidence intervals and point estimates -->
+  <!-- Smith 2018: SMD=-0.72 [-1.10, -0.34] -->
+  <line x1="280" y1="80" x2="360" y2="80" class="ci-line"/>
+  <rect x="315" y="72" width="16" height="16" class="point"/>
+
+  <!-- Jones 2019: SMD=-0.85 [-1.27, -0.43] -->
+  <line x1="260" y1="120" x2="350" y2="120" class="ci-line"/>
+  <rect x="300" y="112" width="14" height="14" class="point"/>
+
+  <!-- Chen 2020: SMD=-0.68 [-1.00, -0.36] -->
+  <line x1="290" y1="160" x2="360" y2="160" class="ci-line"/>
+  <rect x="320" y="152" width="18" height="18" class="point"/>
+
+  <!-- Mueller 2017: SMD=-0.91 [-1.36, -0.46] -->
+  <line x1="250" y1="200" x2="345" y2="200" class="ci-line"/>
+  <rect x="292" y="192" width="13" height="13" class="point"/>
+
+  <!-- Garcia 2021: SMD=-0.76 [-1.12, -0.40] -->
+  <line x1="275" y1="240" x2="355" y2="240" class="ci-line"/>
+  <rect x="310" y="232" width="15" height="15" class="point"/>
+
+  <!-- Pooled estimate diamond -->
+  <polygon points="400,290 310,300 400,310 350,300" class="diamond"/>
+  <text x="50" y="305" font-weight="bold">Overall (RE)</text>
+
+  <!-- X-axis -->
+  <line x1="200" y1="340" x2="600" y2="340" class="axis"/>
+  <text x="200" y="360">-2.0</text>
+  <text x="300" y="360">-1.0</text>
+  <text x="400" y="360">0</text>
+  <text x="500" y="360">1.0</text>
+  <text x="400" y="385" text-anchor="middle">Standardized Mean Difference</text>
+
+  <!-- Favors labels -->
+  <text x="300" y="375" text-anchor="middle" font-size="10">Favors CBT</text>
+  <text x="500" y="375" text-anchor="middle" font-size="10">Favors Control</text>
+
+  <!-- Weight column -->
+  <text x="650" y="60" font-weight="bold">Weight</text>
+  <text x="650" y="80">12.8%</text>
+  <text x="650" y="120">11.2%</text>
+  <text x="650" y="160">15.4%</text>
+  <text x="650" y="200">10.1%</text>
+  <text x="650" y="240">13.5%</text>
+
+  <!-- Effect size column -->
+  <text x="720" y="60" font-weight="bold">SMD [95% CI]</text>
+  <text x="720" y="80">-0.72 [-1.10, -0.34]</text>
+  <text x="720" y="120">-0.85 [-1.27, -0.43]</text>
+  <text x="720" y="160">-0.68 [-1.00, -0.36]</text>
+  <text x="720" y="200">-0.91 [-1.36, -0.46]</text>
+  <text x="720" y="240">-0.76 [-1.12, -0.40]</text>
+  <text x="720" y="305" font-weight="bold">-0.77 [-0.92, -0.61]</text>
+</svg>

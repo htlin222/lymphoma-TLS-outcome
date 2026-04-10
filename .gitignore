@@ -1,0 +1,136 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+conda-meta/
+
+# Build artifacts
+build/
+dist/
+pip-wheel-metadata/
+
+# Jupyter
+.ipynb_checkpoints/
+*.nb.html
+*.nb.pdf
+
+# R / RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.Rproj.user/
+renv/library/
+renv/staging/
+
+# Quarto / RMarkdown
+.quarto/
+_quarto/
+*_cache/
+*_files/
+_cache/
+_site/
+_book/
+_freeze/
+
+# Synced skill mirrors (source of truth is ma-*/, synced via tooling/sync-skills.sh)
+.claude/skills/ma-*/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temp files
+*.tmp
+*.bak
+*.log
+
+# Development logs (archive only)
+docs/archive/dev-logs/
+docs/archive/test-reports/
+
+# R environment files (should be in projects, not root)
+# renv.lock is now tracked for reproducibility
+
+# Data science conventional dirs (raw/intermediate outputs)
+# Note: plain-text artifacts are tracked; rely on the binary-extension ignores below.
+
+# Databases / large data formats
+*.sqlite
+*.db
+*.parquet
+*.arrow
+*.feather
+*.h5
+*.hdf5
+*.hdf
+*.sav
+*.dta
+*.rds
+*.rda
+
+# Binary images (keep text outputs tracked)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.webp
+*.ico
+*.psd
+
+# PDFs (often large or copyrighted)
+*.pdf
+
+# ===================
+# EXCEPTIONS - Always track these
+# ===================
+
+# Test fixtures (preserve for CI/testing)
+!tests/fixtures/**/*.bib
+!tests/fixtures/**/*.csv
+!tests/fixtures/**/*.yaml
+!tests/fixtures/**/*.md
+!tests/fixtures/**/*.txt
+!tests/fixtures/**/*.svg
+
+# ==========================================
+# Projects Directory
+# ==========================================
+# Ignore all projects except documented examples
+projects/*
+!projects/.gitkeep
+!projects/ici-breast-cancer/
+!projects/dlbcl-frontline-nma/
+!projects/legacy/README.md
+worktrees/

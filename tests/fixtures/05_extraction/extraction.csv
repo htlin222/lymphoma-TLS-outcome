@@ -1,0 +1,21 @@
+study_id,record_id,outcome_id,outcome_name,outcome_type,arm_label,n,mean,sd,events,total,timepoint,notes
+S1,PMID25601234,O1,HDRS,continuous,CBT,58,10.2,5.3,,,8w,Post-treatment
+S1,PMID25601234,O1,HDRS,continuous,Control,55,15.8,6.1,,,8w,Post-treatment
+S1,PMID25601234,O2,Response,binary,CBT,,,58,35,58,8w,≥50% HDRS reduction
+S1,PMID25601234,O2,Response,binary,Control,,,55,18,55,8w,≥50% HDRS reduction
+S2,PMID29456789,O1,HDRS,continuous,CBT,95,11.5,6.0,,,12w,End of treatment
+S2,PMID29456789,O1,HDRS,continuous,Control,92,16.2,6.8,,,12w,End of treatment
+S2,PMID29456789,O2,Response,binary,CBT,,,95,58,95,12w,
+S2,PMID29456789,O2,Response,binary,Control,,,92,35,92,12w,
+S3,PMID32789012,O3,PHQ-9,continuous,CBT,38,8.5,4.2,,,8w,Online delivery
+S3,PMID32789012,O3,PHQ-9,continuous,Control,35,12.1,5.0,,,8w,Waitlist
+S4,PMID31234567,O1,HDRS,continuous,CBT,72,12.8,5.8,,,16w,Treatment-resistant sample
+S4,PMID31234567,O1,HDRS,continuous,Control,70,16.5,6.2,,,16w,TAU only
+S4,PMID31234567,O2,Response,binary,CBT,,,72,38,72,16w,
+S4,PMID31234567,O2,Response,binary,Control,,,70,22,70,16w,
+S5,PMID34567890,O3,PHQ-9,continuous,CBT,235,7.8,4.5,,,6w,Brief CBT primary care
+S5,PMID34567890,O3,PHQ-9,continuous,Control,228,10.2,5.1,,,6w,Usual care
+S6,Scopus85012345678,O1,HDRS,continuous,CBT,72,9.8,5.0,,,10w,Low-income setting
+S6,Scopus85012345678,O1,HDRS,continuous,Control,68,14.6,5.9,,,10w,
+S7,Scopus85048901234,O1,HDRS,continuous,CBT,44,11.2,5.5,,,12w,Older adults ≥65
+S7,Scopus85048901234,O1,HDRS,continuous,Control,42,15.0,6.0,,,12w,
