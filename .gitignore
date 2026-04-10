@@ -1,0 +1,5 @@
+# gh-pages branch — published site, all assets must be tracked.
+# Override the user's global gitignore which excludes dist/ (Python/JS build artifact pattern).
+!dist/
+!**/dist/
+!**/dist/**
