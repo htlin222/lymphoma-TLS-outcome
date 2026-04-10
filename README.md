@@ -6,10 +6,13 @@
 [![Last commit](https://img.shields.io/github/last-commit/htlin222/meta-pipe?style=flat-square)](https://github.com/htlin222/meta-pipe/commits/main)
 [![License](https://img.shields.io/badge/license-Academic%20%26%20Non--Commercial-blue?style=flat-square)](LICENSE)
 [![Python](https://img.shields.io/badge/python-%E2%89%A53.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org)
+[![Talk slides](https://img.shields.io/badge/📊%20talk%20slides-live-1f4e79?style=flat-square)](https://htlin222.github.io/lymphoma-TLS-outcome/)
 
 **AI-assisted, end-to-end meta-analysis with reproducible tooling.**
 
 *From research question to manuscript-ready output -- powered by Claude Code.*
+
+📊 **5-minute talk on lymphoma + TLS outcome rapid review**: <https://htlin222.github.io/lymphoma-TLS-outcome/> ([source](slides/index.qmd))
 
 </div>
 
