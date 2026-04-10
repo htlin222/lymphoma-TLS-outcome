@@ -29,17 +29,21 @@ Today, a 5-minute walk through whether tumor lysis syndrome at presentation in l
 
 ## Why this question — Background {background-color="#f5f9ff"}
 
-- **TLS is an oncologic emergency in lymphoma** — well known, well managed
-- **Incidence is well described** — Cairo–Bishop, Howard, every textbook
-- But **the prognostic effect of TLS itself has never been pooled**
-- Existing reviews focus on: drug-specific TLS (venetoclax, TKIs), management algorithms, single-disease cohorts
+- **TLS is an oncologic emergency** — well known, well managed (Cairo–Bishop 2004; Howard 2011; Bociek & Lunning *NEJM* 2025)
+- **Incidence is well described** in every textbook; **prognostic effect has never been pooled**
+- **Strong administrative-data signal**: NHL + TLS in-hospital mortality **28.3 % vs 5.1 %** without TLS (NIS 2019–2020, adjusted OR **7.3**)¹
+- Existing reviews focus on drug-specific TLS (venetoclax, TKIs), management algorithms, single-disease cohorts — **not on TLS as a prognostic marker in lymphoma**
 
 ::: {.takehome .small}
-**Gap**: No published meta-analysis answers *"Does TLS at presentation independently mark a higher-mortality lymphoma patient?"*
+**Gap**: No published meta-analysis of *comparative cohort* studies answers *"Does TLS at presentation independently mark a higher-mortality lymphoma patient?"*
+:::
+
+::: {.tiny}
+¹ NIS 2019–2020 analysis, *J Clin Oncol* 2024 suppl 16, abstr e19032
 :::
 
 ::: {.notes}
-We have lots of papers on TLS incidence and management. None had ever pooled the comparative cohort evidence on whether TLS itself predicts mortality. That's the gap we tried to fill.
+We have lots of papers on TLS incidence and management, including a 2025 NEJM review. But none had pooled the comparative cohort evidence. The administrative data already hints at a large effect — NHL patients with TLS have 28% in-hospital mortality versus 5% without, adjusted OR 7.3 in the most recent NIS analysis. That's the backdrop against which our cohort meta-analysis sits, and it suggests we should be on the lookout for a signal.
 :::
 
 ---
@@ -137,13 +141,14 @@ Here is the catch. The moment you slice the data by adjustment status or by mort
 ### 🚨 Spontaneous TLS
 **At admission, before any chemotherapy**
 
-- Marker of **overwhelming tumor burden**
-- The body is failing before treatment can start
+- Marker of **overwhelming tumor burden**; body failing before treatment begins
+- Listed as a specific risk factor in **NCCN B-cell & T-cell Lymphoma guidelines**
 
 **Effect estimates**:
 
 - Pediatric LMIC Burkitt — aOR **7.8**
 - HIV-NHL — OR **11.3**
+- **Abdel-Nabey 2022** (ICU cohort n = 153): spontaneous TLS independently predicts 1-year mortality, **adjusted HR 1.65 (1.01–2.69)**¹
 
 → **High-mortality cohort**
 
@@ -154,14 +159,14 @@ Here is the catch. The moment you slice the data by adjustment status or by mort
 ### 💊 Treatment-induced TLS
 **Days 1–7 of induction chemotherapy**
 
-- Marker of **chemosensitivity**
-- The tumor is responding violently
+- Hypothesis: marker of **chemosensitivity** — tumor is responding violently
+- Indirect support: rasburicase use (proxy for severe lysis) **improved** 1-year remission HR 2.45 (1.17–5.15)¹
 
 **Effect estimates**:
 
 - Bozkurt 2024 — OR **1.6** (NS)
 - Sall 2026 — log-rank **p = 0.7** (null)
-- Zeng 2024 — *higher* uric acid → *better* survival
+- Zeng 2024 — *higher* uric acid at TLS onset → **better** survival
 
 → **Often a transient bump**
 
@@ -169,8 +174,12 @@ Here is the catch. The moment you slice the data by adjustment status or by mort
 
 :::
 
+::: {.tiny}
+¹ Abdel-Nabey et al., *Ann Intensive Care* 2022 — n=153 critically-ill TLS patients, multivariable Cox
+:::
+
 ::: {.notes}
-This is the most clinically useful distinction, and it is hidden inside the pooled estimate. Spontaneous TLS — the patient who walks into the ER already lysing — is a high-mortality cohort and the effect estimates are large. Treatment-induced TLS during R-CHOP day 2 is often a marker that the chemotherapy is working, and the effect estimates are small or null. Don't conflate them.
+This is the most clinically useful distinction, and it is hidden inside the pooled estimate. Spontaneous TLS — the patient who walks into the ER already lysing — is a high-mortality cohort. Abdel-Nabey's ICU cohort from 2022 showed spontaneous TLS independently predicts 1-year mortality with a hazard ratio of 1.65. Treatment-induced TLS during R-CHOP day 2 is often a marker that the chemotherapy is working, and the same Abdel-Nabey paper found that rasburicase use — a proxy for severe lysis — was associated with better 1-year remission. Don't conflate the two.
 :::
 
 ---
@@ -179,21 +188,23 @@ This is the most clinically useful distinction, and it is hidden inside the pool
 
 ::: {.small}
 
-| Clinical scenario | Action |
-|---|---|
-| **Adult DLBCL + lab TLS on R-CHOP days 1–3** | Continue treatment, hydrate, allopurinol, recheck labs q6h. **No automatic ICU.** |
-| **Adult lymphoma + clinical TLS** (Cr ≥ 1.5× ULN, arrhythmia, seizure) | Rapid nephrology, low ICU threshold, rasburicase, early RRT |
-| **Spontaneous TLS at presentation** (Burkitt / HIV-NHL / bulky DLBCL) | **High-mortality cohort.** Consider ICU during cytoreductive prephase regardless of clinical TLS grade |
-| **Pediatric Burkitt, any setting** | High TLS risk; rasburicase prophylaxis; aggressive supportive care |
+| Clinical scenario | Action | Evidence |
+|---|---|---|
+| **Adult DLBCL + lab TLS** (no organ dysfunction) on R-CHOP days 1–3 | Continue treatment, hydrate 1–3 L/m²/day (UOP ≥ 2 mL/kg/hr), allopurinol ± rasburicase, **q 6 h labs + telemetry**. **No automatic ICU.** | Coiffier/Cairo *JCO* 2008; NCCN B-cell; NEJM 2025 ¹. **Montesinos AML n=614: LTLS mortality 21 % vs 24 % without TLS (NS); CTLS mortality 83 %** ² |
+| **Adult lymphoma + clinical TLS** (Cr ≥ 1.5× ULN, arrhythmia, seizure) | Rapid nephrology, **low ICU threshold**, rasburicase, early RRT | Coiffier *JCO* 2008; NEJM 2025; **83 % CTLS mortality** signal ² |
+| **Spontaneous TLS at presentation** (Burkitt / HIV-NHL / bulky DLBCL with renal involvement) | **High-mortality cohort.** Consider ICU during cytoreductive prephase **regardless of TLS grade** | Abdel-Nabey 2022: spontaneous TLS **HR 1.65 (1.01–2.69)** ³; NCCN lists as specific risk factor |
+| **Pediatric Burkitt, any setting** | High TLS risk; rasburicase prophylaxis; aggressive supportive care | Mansoor 2019 aOR **7.8**; Cairo 2010; NCCN pediatric |
 
 :::
 
 ::: {.tiny}
-*Clinical-judgment statements grounded in **very-low-certainty** evidence. Local guidelines and individual patient factors should override.*
+¹ Bociek & Lunning, *NEJM* 2025 · ² Montesinos et al., cited in Coiffier *JCO* 2008 · ³ Abdel-Nabey et al., *Ann Intensive Care* 2022
+
+*Clinical-judgment statements grounded in **very-low-certainty** pooled evidence + guideline support. Local protocols and individual patient factors should override.*
 :::
 
 ::: {.notes}
-Take a photo of this slide. Four scenarios. The top one — adult DLBCL with lab TLS on R-CHOP day 2 — is the one that comes up most often in clinic, and the answer is don't panic, manage on the ward. The third row — spontaneous TLS in a chemonaive patient — is the one to worry about.
+Take a photo of this slide. Four scenarios, each now with a specific evidence source. The top row — adult DLBCL with lab TLS on R-CHOP day 2 — is the one that comes up most often in clinic. Montesinos' 614-patient AML cohort shows laboratory TLS carries no excess mortality versus no TLS at all, while clinical TLS carried 83% mortality. DLBCL is classified by ASCO as intermediate-risk, not high-risk like Burkitt. The answer is don't panic, manage on the ward. The third row — spontaneous TLS in a chemonaive patient — is the one to worry about, and Abdel-Nabey's adjusted hazard ratio of 1.65 supports treating this as a distinct high-mortality cohort.
 :::
 
 ---
@@ -202,7 +213,7 @@ Take a photo of this slide. Four scenarios. The top one — adult DLBCL with lab
 
 ::: {.callout-warning}
 
-This pool excludes — and clinicians should expect a separate review for —
+This pool excludes — for newer-therapy TLS, see **Bociek & Lunning, *NEJM* 2025;393(11):1104–16**:
 
 - **Immune checkpoint inhibitor TLS** (rare but distinct mechanism)
 - **CAR-T cell therapy TLS** (CRS overlap)
@@ -219,7 +230,7 @@ Plus the deferred remediation queue:
 - Wössmann 2003 NHL-BFM, MD Anderson rasburicase series, Howard 2011 panel cohorts
 
 ::: {.notes}
-One slide of honest disclaimers. We did not touch immune checkpoint inhibitors, CAR-T, venetoclax, or bispecific antibodies — different mechanisms, different evidence base, different review needed. And several large historical cohorts including the BFM trials are missing, queued for the proper systematic review pass.
+One slide of honest disclaimers. We did not touch immune checkpoint inhibitors, CAR-T, venetoclax, or bispecific antibodies — different mechanisms, different evidence base, different review needed. The 2025 NEJM review by Bociek and Lunning covers those. Several large historical cohorts including the BFM trials are also missing, queued for the proper systematic review pass.
 :::
 
 ---
