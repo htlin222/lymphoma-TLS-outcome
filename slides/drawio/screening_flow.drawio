@@ -1,0 +1,40 @@
+<mxfile host="Electron" modified="2026-04-11T04:00:00.000Z" agent="Claude" version="29.6.6" type="device">
+  <diagram id="screening" name="Screening">
+    <mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="&lt;b&gt;766&lt;/b&gt;&#10;merged" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e9ecef;strokeColor=#495057;fontColor=#212529;fontSize=18;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="&lt;b&gt;669&lt;/b&gt;&#10;deduped" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e9ecef;strokeColor=#495057;fontColor=#212529;fontSize=18;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="140" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="&lt;b&gt;58&lt;/b&gt;&#10;title pre-filter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3cd;strokeColor=#cc6600;fontColor=#5a3e00;fontSize=18;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="560" y="140" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="&lt;b&gt;33&lt;/b&gt;&#10;abstract screen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e9ecef;strokeColor=#495057;fontColor=#212529;fontSize=18;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="&lt;b&gt;6&lt;/b&gt;&#10;included" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f4e79;strokeColor=#0f2d4a;fontColor=#ffffff;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="140" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#495057;strokeWidth=2;endArrow=classic;endSize=12;html=1;" edge="1" parent="1" source="n1" target="n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#495057;strokeWidth=2;endArrow=classic;endSize=12;html=1;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#cc6600;strokeWidth=2;endArrow=classic;endSize=12;html=1;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#495057;strokeWidth=2;endArrow=classic;endSize=12;html=1;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lab" value="⚠ 611 records excluded on title alone&#10;(documented as recall gap)" style="text;html=1;fontSize=13;fontColor=#7a4e00;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="530" y="260" width="220" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

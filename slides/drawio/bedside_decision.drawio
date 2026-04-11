@@ -1,0 +1,55 @@
+<mxfile host="Electron" modified="2026-04-11T04:00:00.000Z" agent="Claude" version="29.6.6" type="device">
+  <diagram id="bedside" name="Bedside">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q" value="&lt;b&gt;TLS in&lt;/b&gt;&#10;&lt;b&gt;lymphoma&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f4e79;strokeColor=#0f2d4a;fontColor=#ffffff;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="when" value="&lt;b&gt;When?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e9ecef;strokeColor=#495057;fontColor=#212529;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="260" y="235" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sp" value="&lt;b&gt;Spontaneous&lt;/b&gt;&#10;(before chemo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3cd;strokeColor=#856404;fontColor=#5a3e00;fontSize=14;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tx" value="&lt;b&gt;Treatment-induced&lt;/b&gt;&#10;(days 1–7)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3cd;strokeColor=#856404;fontColor=#5a3e00;fontSize=14;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="480" y="390" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hi" value="&lt;b&gt;High-risk cohort&lt;/b&gt;&#10;ICU during prephase&#10;regardless of grade" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8d7da;strokeColor=#721c24;fontColor=#4a1014;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="740" y="70" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="od" value="&lt;b&gt;Organ&lt;/b&gt;&#10;&lt;b&gt;dysfunction?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e9ecef;strokeColor=#495057;fontColor=#212529;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="760" y="390" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ward" value="&lt;b&gt;Lab TLS&lt;/b&gt;&#10;→ Ward&#10;hydration, q6h labs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d4edda;strokeColor=#155724;fontColor=#0b2e14;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="270" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="icu" value="&lt;b&gt;Clinical TLS&lt;/b&gt;&#10;→ ICU + early RRT&#10;nephrology consult" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8d7da;strokeColor=#721c24;fontColor=#4a1014;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="450" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#495057;strokeWidth=2;endArrow=classic;endSize=12;html=1;" edge="1" parent="1" source="q" target="when">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="Before&#10;chemo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#495057;strokeWidth=2;endArrow=classic;endSize=12;html=1;fontSize=11;fontColor=#495057;" edge="1" parent="1" source="when" target="sp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="During&#10;chemo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#495057;strokeWidth=2;endArrow=classic;endSize=12;html=1;fontSize=11;fontColor=#495057;" edge="1" parent="1" source="when" target="tx">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#721c24;strokeWidth=2;endArrow=classic;endSize=12;html=1;" edge="1" parent="1" source="sp" target="hi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#495057;strokeWidth=2;endArrow=classic;endSize=12;html=1;" edge="1" parent="1" source="tx" target="od">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#155724;strokeWidth=2;endArrow=classic;endSize=12;html=1;fontSize=11;fontColor=#155724;fontStyle=1;" edge="1" parent="1" source="od" target="ward">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;strokeColor=#721c24;strokeWidth=2;endArrow=classic;endSize=12;html=1;fontSize=11;fontColor=#721c24;fontStyle=1;" edge="1" parent="1" source="od" target="icu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
