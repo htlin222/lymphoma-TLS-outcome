@@ -321,9 +321,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="index_files/libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="index_files/libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -460,28 +457,10 @@ Hsiehting Lin
 <p>Step 3 is the non-standard one — 611 records excluded on title alone. Recall gap, documented in limitations.</p>
 </div>
 </div><div class="column" style="width:64%;">
-<div class="cell" data-reveal="true" data-fig-width="8" data-fig-height="2.6" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph LR
-  A[766&lt;br/&gt;merged] --&gt; B[669&lt;br/&gt;deduped]
-  B --&gt; C[58&lt;br/&gt;title-filter]
-  C --&gt; D[33&lt;br/&gt;abstract-screen]
-  D --&gt; E[6&lt;br/&gt;included]
-  classDef step fill:#e9ecef,stroke:#495057,color:#212529;
-  classDef warn fill:#fff3cd,stroke:#cc6600,color:#7a4e00;
-  classDef final fill:#1f4e79,stroke:#0f2d4a,color:#ffffff;
-  class A,B step;
-  class C warn;
-  class D step;
-  class E final;
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/screening_flow.svg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
 </div>
 </div>
 </div>
@@ -622,30 +601,10 @@ Hsiehting Lin
 <p>→ no sub-pool is statistically robust on its own</p>
 </div>
 </div><div class="column" style="width:62%;">
-<div class="cell" data-reveal="true" data-fig-width="8" data-fig-height="3.6" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph LR
-  S[6 studies] --&gt; C[Crude&lt;br/&gt;k=4]
-  S --&gt; J[Adjusted&lt;br/&gt;k=2]
-  C --&gt; CE[Early mort.&lt;br/&gt;k=1 ❌]
-  C --&gt; CL[Long-term&lt;br/&gt;k=2 ⚠️]
-  J --&gt; JJ[Mansoor&lt;br/&gt;+ Canet&lt;br/&gt;k=2 ⚠️]
-  classDef root fill:#1f4e79,stroke:#0f2d4a,color:#ffffff;
-  classDef branch fill:#e9ecef,stroke:#495057,color:#212529;
-  classDef leafok fill:#fff3cd,stroke:#856404,color:#5a3e00;
-  classDef leafbad fill:#f8d7da,stroke:#721c24,color:#4a1014;
-  class S root;
-  class C,J branch;
-  class CE leafbad;
-  class CL,JJ leafok;
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/stratification_tree.svg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
 </div>
 </div>
 </div>
@@ -769,34 +728,10 @@ Hsiehting Lin
 <p>Everything downstream — ward vs ICU, timing of rasburicase, chemotherapy delay — follows from these two answers.</p>
 </div>
 </div><div class="column" style="width:66%;">
-<div class="cell" data-reveal="true" data-fig-width="8" data-fig-height="4.4" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph LR
-  Q[TLS in&lt;br/&gt;lymphoma] --&gt; W{When?}
-  W --&gt;|Before&lt;br/&gt;chemo| SP[Spontaneous]
-  W --&gt;|Days 1–7| TX[Treatment-&lt;br/&gt;induced]
-  SP --&gt; HI[High-risk&lt;br/&gt;ICU prephase]
-  TX --&gt; O{Organ&lt;br/&gt;dysfunc?}
-  O --&gt;|No| WD[Lab TLS&lt;br/&gt;→ Ward]
-  O --&gt;|Yes| IC[Clinical TLS&lt;br/&gt;→ ICU + RRT]
-  classDef root fill:#1f4e79,stroke:#0f2d4a,color:#ffffff;
-  classDef decide fill:#e9ecef,stroke:#495057,color:#212529;
-  classDef bad fill:#f8d7da,stroke:#721c24,color:#4a1014;
-  classDef ok fill:#d4edda,stroke:#155724,color:#0b2e14;
-  classDef neutral fill:#fff3cd,stroke:#856404,color:#5a3e00;
-  class Q root;
-  class W,O decide;
-  class SP,TX neutral;
-  class HI,IC bad;
-  class WD ok;
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/bedside_decision.svg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
 </div>
 </div>
 </div>
